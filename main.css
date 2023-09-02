@@ -1,0 +1,40 @@
+/* CSS cho overlay chứa biểu tượng loading */
+#loadingOverlay {
+    display: none;
+    /* Ẩn ban đầu */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Màu nền với độ mờ */
+    justify-content: center;
+    align-items: center;
+    /* display: flex; */
+    z-index: 9999;
+    /* Đảm bảo hiển thị trên tất cả các phần tử khác */
+}
+
+/* CSS cho biểu tượng loading vòng tròn */
+.spinner {
+    border: 8px solid rgba(77, 202, 106, 0.3);
+    border-radius: 50%;
+    border-top: 8px solid #0c82d1;
+    /* Màu biểu tượng loading */
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    /* Tạo hiệu ứng xoay vòng tròn */
+}
+
+/* Keyframes cho hiệu ứng xoay vòng tròn */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
