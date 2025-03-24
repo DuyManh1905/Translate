@@ -1,1 +1,1 @@
-add
+delete lan 2
